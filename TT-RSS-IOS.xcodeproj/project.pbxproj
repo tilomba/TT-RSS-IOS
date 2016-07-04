@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BCDC11A7FF323F8BC27130F /* Pods_TT_RSS_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B191FB5B9CBED8E49D206F9A /* Pods_TT_RSS_IOS.framework */; };
+		AAC02B19193DEEFE003997F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC02B18193DEEFE003997F3 /* AppDelegate.swift */; };
+		AAC02B1B193DEEFE003997F3 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC02B1A193DEEFE003997F3 /* FeedsViewController.swift */; };
+		AAC02B1E193DEEFE003997F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC02B1C193DEEFE003997F3 /* Main.storyboard */; };
+		AAC02B20193DEEFE003997F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC02B1F193DEEFE003997F3 /* Images.xcassets */; };
+		AAC02B3A193DF344003997F3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AAC02B39193DF344003997F3 /* Podfile */; };
+		E7B43E48A92627ED76588AF4 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		FB0541361CECCD0700F5CE09 /* FeedTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0541351CECCD0700F5CE09 /* FeedTableItem.swift */; };
+		FB05413E1CED0DCB00F5CE09 /* TRSSLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05413D1CED0DCB00F5CE09 /* TRSSLoginResponse.swift */; };
+		FB0541401CEDC1B700F5CE09 /* TTRSSFeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05413F1CEDC1B600F5CE09 /* TTRSSFeeds.swift */; };
+		FB0541421CEDC7A400F5CE09 /* TTRSSGetFeedsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0541411CEDC7A400F5CE09 /* TTRSSGetFeedsResponse.swift */; };
+		FB20B8F91D280DD4001F8FC9 /* HeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20B8F81D280DD4001F8FC9 /* HeadlinesViewController.swift */; };
+		FB20B8FB1D2810A1001F8FC9 /* HeadlineTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20B8FA1D2810A1001F8FC9 /* HeadlineTableItem.swift */; };
+		FB20B8FF1D283DB3001F8FC9 /* Settings-25.png in Resources */ = {isa = PBXBuildFile; fileRef = FB20B8FE1D283DB3001F8FC9 /* Settings-25.png */; };
+		FB20B9011D2840D6001F8FC9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20B9001D2840D6001F8FC9 /* SettingsViewController.swift */; };
+		FB3506BE1CEE16D100BE5364 /* TTRSSGetHeadlinesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3506BC1CEE16D100BE5364 /* TTRSSGetHeadlinesResponse.swift */; };
+		FB3506BF1CEE16D100BE5364 /* TTRSSHeadlines.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3506BD1CEE16D100BE5364 /* TTRSSHeadlines.swift */; };
+		FBBC930E1CF22B08008682E2 /* TTRSSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC930C1CF22B08008682E2 /* TTRSSStatus.swift */; };
+		FBBC930F1CF22B08008682E2 /* TTRSSStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC930D1CF22B08008682E2 /* TTRSSStatusResponse.swift */; };
+		FBE0CB871D2AB4230000412F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FBE0CB861D2AB4230000412F /* logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAC02B26193DEEFE003997F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAC02B0B193DEEFE003997F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAC02B12193DEEFE003997F3;
+			remoteInfo = TTRSSIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F82A71497D20EBF4D706375 /* Pods-TT-RSS-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TT-RSS-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TT-RSS-IOS/Pods-TT-RSS-IOS.release.xcconfig"; sourceTree = "<group>"; };
+		AAC02B13193DEEFE003997F3 /* TT-RSS-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TT-RSS-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC02B17193DEEFE003997F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC02B18193DEEFE003997F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAC02B1A193DEEFE003997F3 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
+		AAC02B1D193DEEFE003997F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAC02B1F193DEEFE003997F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AAC02B25193DEEFE003997F3 /* TT-RSS-IOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TT-RSS-IOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC02B39193DF344003997F3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B191FB5B9CBED8E49D206F9A /* Pods_TT_RSS_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TT_RSS_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3903CBD763D38B019FBF91E /* Pods-TT-RSS-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TT-RSS-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TT-RSS-IOS/Pods-TT-RSS-IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0541351CECCD0700F5CE09 /* FeedTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableItem.swift; path = TTRSSIOS/FeedTableItem.swift; sourceTree = "<group>"; };
+		FB05413D1CED0DCB00F5CE09 /* TRSSLoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TRSSLoginResponse.swift; path = TTRSSIOS/TRSSLoginResponse.swift; sourceTree = "<group>"; };
+		FB05413F1CEDC1B600F5CE09 /* TTRSSFeeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTRSSFeeds.swift; path = TTRSSIOS/TTRSSFeeds.swift; sourceTree = "<group>"; };
+		FB0541411CEDC7A400F5CE09 /* TTRSSGetFeedsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTRSSGetFeedsResponse.swift; path = TTRSSIOS/TTRSSGetFeedsResponse.swift; sourceTree = "<group>"; };
+		FB20B8F81D280DD4001F8FC9 /* HeadlinesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlinesViewController.swift; sourceTree = "<group>"; };
+		FB20B8FA1D2810A1001F8FC9 /* HeadlineTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeadlineTableItem.swift; path = TTRSSIOS/HeadlineTableItem.swift; sourceTree = "<group>"; };
+		FB20B8FE1D283DB3001F8FC9 /* Settings-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-25.png"; sourceTree = "<group>"; };
+		FB20B9001D2840D6001F8FC9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FB3506BC1CEE16D100BE5364 /* TTRSSGetHeadlinesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTRSSGetHeadlinesResponse.swift; path = TTRSSIOS/TTRSSGetHeadlinesResponse.swift; sourceTree = "<group>"; };
+		FB3506BD1CEE16D100BE5364 /* TTRSSHeadlines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTRSSHeadlines.swift; path = TTRSSIOS/TTRSSHeadlines.swift; sourceTree = "<group>"; };
+		FBBC930C1CF22B08008682E2 /* TTRSSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTRSSStatus.swift; path = TTRSSIOS/TTRSSStatus.swift; sourceTree = "<group>"; };
+		FBBC930D1CF22B08008682E2 /* TTRSSStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTRSSStatusResponse.swift; path = TTRSSIOS/TTRSSStatusResponse.swift; sourceTree = "<group>"; };
+		FBD9750D1D2AC8E6006E7DD0 /* TT-RSS-IOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TT-RSS-IOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBE0CB861D2AB4230000412F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAC02B10193DEEFE003997F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B43E48A92627ED76588AF4 /* (null) in Frameworks */,
+				4BCDC11A7FF323F8BC27130F /* Pods_TT_RSS_IOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC02B22193DEEFE003997F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		250D9AFA1F4666115663FA65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3903CBD763D38B019FBF91E /* Pods-TT-RSS-IOS.debug.xcconfig */,
+				7F82A71497D20EBF4D706375 /* Pods-TT-RSS-IOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAC02B0A193DEEFE003997F3 = {
+			isa = PBXGroup;
+			children = (
+				AAC02B39193DF344003997F3 /* Podfile */,
+				AAC02B15193DEEFE003997F3 /* TT-RSS-IOS-main */,
+				FB20B8F71D280B4C001F8FC9 /* Models */,
+				AAC02B14193DEEFE003997F3 /* Products */,
+				250D9AFA1F4666115663FA65 /* Pods */,
+				EEF95FE7D3B4D4445340BCB7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AAC02B14193DEEFE003997F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAC02B13193DEEFE003997F3 /* TT-RSS-IOS.app */,
+				AAC02B25193DEEFE003997F3 /* TT-RSS-IOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAC02B15193DEEFE003997F3 /* TT-RSS-IOS-main */ = {
+			isa = PBXGroup;
+			children = (
+				FBD9750D1D2AC8E6006E7DD0 /* TT-RSS-IOS-Bridging-Header.h */,
+				FBE0CB861D2AB4230000412F /* logo.png */,
+				FB20B8FE1D283DB3001F8FC9 /* Settings-25.png */,
+				AAC02B18193DEEFE003997F3 /* AppDelegate.swift */,
+				FB20B9001D2840D6001F8FC9 /* SettingsViewController.swift */,
+				AAC02B1A193DEEFE003997F3 /* FeedsViewController.swift */,
+				FB20B8F81D280DD4001F8FC9 /* HeadlinesViewController.swift */,
+				AAC02B1C193DEEFE003997F3 /* Main.storyboard */,
+				AAC02B1F193DEEFE003997F3 /* Images.xcassets */,
+				AAC02B16193DEEFE003997F3 /* Supporting Files */,
+			);
+			name = "TT-RSS-IOS-main";
+			path = TTRSSIOS;
+			sourceTree = "<group>";
+		};
+		AAC02B16193DEEFE003997F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAC02B17193DEEFE003997F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEF95FE7D3B4D4445340BCB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B191FB5B9CBED8E49D206F9A /* Pods_TT_RSS_IOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB20B8F71D280B4C001F8FC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBBC930C1CF22B08008682E2 /* TTRSSStatus.swift */,
+				FBBC930D1CF22B08008682E2 /* TTRSSStatusResponse.swift */,
+				FB3506BC1CEE16D100BE5364 /* TTRSSGetHeadlinesResponse.swift */,
+				FB3506BD1CEE16D100BE5364 /* TTRSSHeadlines.swift */,
+				FB0541411CEDC7A400F5CE09 /* TTRSSGetFeedsResponse.swift */,
+				FB05413F1CEDC1B600F5CE09 /* TTRSSFeeds.swift */,
+				FB05413D1CED0DCB00F5CE09 /* TRSSLoginResponse.swift */,
+				FB0541351CECCD0700F5CE09 /* FeedTableItem.swift */,
+				FB20B8FA1D2810A1001F8FC9 /* HeadlineTableItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAC02B12193DEEFE003997F3 /* TT-RSS-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC02B2F193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "TT-RSS-IOS" */;
+			buildPhases = (
+				CCFEFBD1D78C323A4C22C3E4 /* 📦 Check Pods Manifest.lock */,
+				AAC02B0F193DEEFE003997F3 /* Sources */,
+				AAC02B10193DEEFE003997F3 /* Frameworks */,
+				AAC02B11193DEEFE003997F3 /* Resources */,
+				AF3109E1FE947AB3BE48D670 /* 📦 Embed Pods Frameworks */,
+				71CB0B0B5A2CFE971AEEAADB /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TT-RSS-IOS";
+			productName = TTRSSIOS;
+			productReference = AAC02B13193DEEFE003997F3 /* TT-RSS-IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAC02B24193DEEFE003997F3 /* TT-RSS-IOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC02B32193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "TT-RSS-IOSTests" */;
+			buildPhases = (
+				AAC02B21193DEEFE003997F3 /* Sources */,
+				AAC02B22193DEEFE003997F3 /* Frameworks */,
+				AAC02B23193DEEFE003997F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAC02B27193DEEFE003997F3 /* PBXTargetDependency */,
+			);
+			name = "TT-RSS-IOSTests";
+			productName = TTRSSIOSTests;
+			productReference = AAC02B25193DEEFE003997F3 /* TT-RSS-IOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAC02B0B193DEEFE003997F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = susieyy;
+				TargetAttributes = {
+					AAC02B12193DEEFE003997F3 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					AAC02B24193DEEFE003997F3 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = AAC02B12193DEEFE003997F3;
+					};
+				};
+			};
+			buildConfigurationList = AAC02B0E193DEEFE003997F3 /* Build configuration list for PBXProject "TT-RSS-IOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAC02B0A193DEEFE003997F3;
+			productRefGroup = AAC02B14193DEEFE003997F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAC02B12193DEEFE003997F3 /* TT-RSS-IOS */,
+				AAC02B24193DEEFE003997F3 /* TT-RSS-IOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAC02B11193DEEFE003997F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB20B8FF1D283DB3001F8FC9 /* Settings-25.png in Resources */,
+				FBE0CB871D2AB4230000412F /* logo.png in Resources */,
+				AAC02B3A193DF344003997F3 /* Podfile in Resources */,
+				AAC02B1E193DEEFE003997F3 /* Main.storyboard in Resources */,
+				AAC02B20193DEEFE003997F3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC02B23193DEEFE003997F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71CB0B0B5A2CFE971AEEAADB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TT-RSS-IOS/Pods-TT-RSS-IOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF3109E1FE947AB3BE48D670 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TT-RSS-IOS/Pods-TT-RSS-IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCFEFBD1D78C323A4C22C3E4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAC02B0F193DEEFE003997F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC02B1B193DEEFE003997F3 /* FeedsViewController.swift in Sources */,
+				FBBC930F1CF22B08008682E2 /* TTRSSStatusResponse.swift in Sources */,
+				FB20B8F91D280DD4001F8FC9 /* HeadlinesViewController.swift in Sources */,
+				AAC02B19193DEEFE003997F3 /* AppDelegate.swift in Sources */,
+				FBBC930E1CF22B08008682E2 /* TTRSSStatus.swift in Sources */,
+				FB3506BE1CEE16D100BE5364 /* TTRSSGetHeadlinesResponse.swift in Sources */,
+				FB0541421CEDC7A400F5CE09 /* TTRSSGetFeedsResponse.swift in Sources */,
+				FB3506BF1CEE16D100BE5364 /* TTRSSHeadlines.swift in Sources */,
+				FB05413E1CED0DCB00F5CE09 /* TRSSLoginResponse.swift in Sources */,
+				FB0541361CECCD0700F5CE09 /* FeedTableItem.swift in Sources */,
+				FB20B9011D2840D6001F8FC9 /* SettingsViewController.swift in Sources */,
+				FB0541401CEDC1B700F5CE09 /* TTRSSFeeds.swift in Sources */,
+				FB20B8FB1D2810A1001F8FC9 /* HeadlineTableItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC02B21193DEEFE003997F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAC02B27193DEEFE003997F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAC02B12193DEEFE003997F3 /* TT-RSS-IOS */;
+			targetProxy = AAC02B26193DEEFE003997F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAC02B1C193DEEFE003997F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC02B1D193DEEFE003997F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAC02B2D193DEEFE003997F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAC02B2E193DEEFE003997F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAC02B30193DEEFE003997F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3903CBD763D38B019FBF91E /* Pods-TT-RSS-IOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TTRSSIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MMappSoft.TT-RSS-IOS";
+				PRODUCT_NAME = "TT-RSS-IOS";
+				SWIFT_OBJC_BRIDGING_HEADER = "TTRSSIOS/TT-RSS-IOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAC02B31193DEEFE003997F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F82A71497D20EBF4D706375 /* Pods-TT-RSS-IOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TTRSSIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MMappSoft.TT-RSS-IOS";
+				PRODUCT_NAME = "TT-RSS-IOS";
+				SWIFT_OBJC_BRIDGING_HEADER = "TTRSSIOS/TT-RSS-IOS-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		AAC02B33193DEEFE003997F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TTRSSIOS.app/TTRSSIOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TTRSSIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MMappSoft.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "TT-RSS-IOS";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		AAC02B34193DEEFE003997F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TTRSSIOS.app/TTRSSIOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TTRSSIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MMappSoft.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "TT-RSS-IOS";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAC02B0E193DEEFE003997F3 /* Build configuration list for PBXProject "TT-RSS-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC02B2D193DEEFE003997F3 /* Debug */,
+				AAC02B2E193DEEFE003997F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC02B2F193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "TT-RSS-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC02B30193DEEFE003997F3 /* Debug */,
+				AAC02B31193DEEFE003997F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC02B32193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "TT-RSS-IOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC02B33193DEEFE003997F3 /* Debug */,
+				AAC02B34193DEEFE003997F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAC02B0B193DEEFE003997F3 /* Project object */;
+}
