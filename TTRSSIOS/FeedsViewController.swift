@@ -25,14 +25,25 @@ class FeedsViewController: UITableViewController, protocolSettingsModal {
         
         let defaults = NSUserDefaults.standardUserDefaults()
 //        defaults.removeObjectForKey("TTRSSURL")
-        guard let defaultTTRSSURL = defaults.stringForKey("TTRSSURL")
+        if let defaultTTRSSUsername = defaults.stringForKey("TTRSSUsername")
+        {
+            self.TTRSSUsername = defaultTTRSSUsername
+        }
+        if let defaultTTRSSPassword = defaults.stringForKey("TTRSSPassword")
+        {
+            self.TTRSSPassword = defaultTTRSSPassword
+        }
+        if let defaultTTRSSURL = defaults.stringForKey("TTRSSURL")
+        {
+            self.TTRSSURL = defaultTTRSSURL
+        }
         else
         {
             print("No URL set")
             ShowSettingsModal(defaults)
             return
         }
-        self.TTRSSURL = defaultTTRSSURL
+        
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -125,16 +136,28 @@ class FeedsViewController: UITableViewController, protocolSettingsModal {
             if let postString = NSString(data:data!, encoding: NSUTF8StringEncoding) as? String {
                 // Print what we got from the call
                 print("JSON (ttrssLogin): " + postString)
-                do {
-                    let data = postString.dataUsingEncoding(NSUTF8StringEncoding)
-                    let json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions()) as? [String: AnyObject]
-                    guard let loginResponse = TTRSSLoginResponse(json: json! as JSON) else {
-                        print("Error initializing object")
-                        return
+                if postString.containsString("LOGIN_ERROR")
+                {
+                    let alert = UIAlertController(title: "Error", message: "Login failed.  Check username and password", preferredStyle: UIAlertControllerStyle.Alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler:  { (UIActionAlert) -> Void in
+                        self.performSegueWithIdentifier("SettingsSegue", sender: self)
+                    }))
+                    self.presentViewController(alert, animated: true, completion: nil)
+
+                }
+                else
+                {
+                    do {
+                        let data = postString.dataUsingEncoding(NSUTF8StringEncoding)
+                        let json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions()) as? [String: AnyObject]
+                        guard let loginResponse = TTRSSLoginResponse(json: json! as JSON) else {
+                            print("Error initializing object")
+                            return
+                        }
+                        completionClosure(session_token: loginResponse.session_id!)
+                    } catch {
+                        print(error)
                     }
-                    completionClosure(session_token: loginResponse.session_id!)
-                } catch {
-                    print(error)
                 }
             }
             
@@ -195,38 +218,6 @@ class FeedsViewController: UITableViewController, protocolSettingsModal {
         return ""
     }
 
-
-    
-
-
-    
-//    func request() {
-//        let URL = NSURL(string: "https://www.wantedly.com/projects.xml")
-//        let feedParser = MWFeedParser(feedURL: URL);
-//        feedParser.delegate = self
-//        feedParser.parse()
-//    }
-//    
-//    func feedParserDidStart(parser: MWFeedParser) {
-//        SVProgressHUD.show()
-//        self.items = [MWFeedItem]()
-//    }
-//
-//    func feedParserDidFinish(parser: MWFeedParser) {
-//        SVProgressHUD.dismiss()
-//        self.tableView.reloadData()
-//    }
-//    
-//    
-//    func feedParser(parser: MWFeedParser, didParseFeedInfo info: MWFeedInfo) {
-//        print(info)
-//        self.title = info.title
-//    }
-//    
-//    func feedParser(parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
-//        print(item)
-//        self.items.append(item)
-//    }
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 100
